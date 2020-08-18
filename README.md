@@ -14,3 +14,7 @@ tensorflow2.0을 이용해 공부한 실습 코드 저장소 입니다.
 ### 네이버 부스트 코스 (텐서플로로 시작하는 머신 러닝)
   - ![수료증](certificate_A20200728-437772.pdf)
   - 강의를 들으며 실습해본 코드가 저장되어 있습니다.
+  
+### Hands-On Machine Learning with Scikit-Learn, Keras & Tensorflow
+ - 책을 보며 공부한 내용 정리
+ - part1인 머신 러닝 부분에 대한 코드 
