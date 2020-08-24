@@ -1,6 +1,10 @@
 # Machine-Learning-via-Tensorflow2.0
 tensorflow2.0을 이용해 공부한 실습 코드 저장소 입니다.
 
+### Kaggle Dataset
+   - Kaggle에 올라와있는 dataset을 이용해서 직접 분석하거나 task를 수행한 내용의 코드가 저장되어 있습니다.
+   - [소스 코드](https://github.com/penguin1109/Machine-Learning-via-Tensorflow2.0/tree/master/Data%20Analysis%20with%20Kaggle%20DataFrame)
+
 ### 모두의 딥러닝
    - 모두의 딥러닝을 이용해 공부하며 직접 실습한 코드 입니다.
    - 회귀와 같은 수학적 기초부터 DNN, CNN, RNN까지 개념적으로 정리해둔 내용이 저장되어 있습니다.
