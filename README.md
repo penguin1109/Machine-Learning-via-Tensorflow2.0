@@ -1,5 +1,5 @@
 # Machine-Learning-via-Tensorflow2.0
-tensorflow2.0을 이용해 공부한 실습 코드 저장소 입니다.
+tensorflow2.0을 이용해 공부한 실습 코드 저장소
 
 ### Kaggle Dataset
    - Kaggle에 올라와있는 dataset을 이용해서 직접 분석하거나 task를 수행한 내용의 코드
