@@ -1,6 +1,12 @@
 # Machine-Learning-via-Tensorflow2.0
 tensorflow2.0을 이용해 공부한 실습 코드 저장소
 
+
+### Hands-On Machine Learning with Scikit-Learn, Keras & Tensorflow
+ - 책을 보며 공부한 내용 정리
+ - 연습 문제 풀이 코드 
+ - [소스 코드](https://github.com/penguin1109/Machine-Learning-via-Tensorflow2.0/tree/master/Hands-On%20MachineLearning)
+
 ### Kaggle Dataset
    - Kaggle에 올라와있는 dataset을 이용해서 직접 분석하거나 task를 수행한 내용의 코드
    - [소스 코드](https://github.com/penguin1109/Machine-Learning-via-Tensorflow2.0/tree/master/Data%20Analysis%20with%20Kaggle%20DataFrame)
@@ -20,8 +26,4 @@ tensorflow2.0을 이용해 공부한 실습 코드 저장소
   - ![수료증](certificate_A20200728-437772.pdf)
   - 강의를 들으며 실습해본 코드가 저장
   
-### Hands-On Machine Learning with Scikit-Learn, Keras & Tensorflow
- - 책을 보며 공부한 내용 정리
- - part1인 머신 러닝 부분에 대한 코드 
- - [소스 코드](https://github.com/penguin1109/Machine-Learning-via-Tensorflow2.0/tree/master/Hands-On%20MachineLearning)
  
