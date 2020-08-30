@@ -6,4 +6,8 @@
 
   - 내가 텍스트 전처리를 이해함에 있어서 도움을 준 대부분의 소스는 [URl]'https://www.kaggle.com/sudalairajkumar/getting-started-with-text-preprocessing/notebook' 이분 것을 참고를 했다.
   - 따라서 나도 같이 tweeter데이터셋을 이용해서 문자열 전처리를 연습해 보고(이는 csv파일을 다룰때에 지저분한 문자열이 column에 있을 경우 필수 기술이다) 나중에 셰익스피어의 희곡, 조선왕조 실록, 등 복잡한 데이터에 적용이 바로 가능하도록 익힐 것이다.
-#### 2. Encoding이란?
+### 2. Encoding이란?
+#### 2-1. Word2Vec - Python3
+#### 2-2. Word2Vec - TensorFlow
+### 3. Text Preprocessing
+  - [소스 코드]
