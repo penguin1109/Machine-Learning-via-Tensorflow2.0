@@ -15,19 +15,19 @@
         1. one-hot-encoding은 예를 들면 ```['thank', 'you', 'hello']```가 있을때 단어들을 [[1,0,0],[0,1,0],[0,0,1]]이런 식의 벡터로 바꾸어 준다.
         2. 그러나 여기에는 *단어간의 유사도*를 고려해 주지 않는다는 문제가 존재한다.
         3. Embedding은 이를 해결할 수 있는 것으로, *유사도를 기준으로 단어의 벡터를 형성*하는 것이다.
-   #### 2-1. One-Hot-Encoding 
-      - 일반적으로 범주의 개수가 10개 이하일때 사용
-   #### 2-2. Word2Vec
-      - Embedding의 방법중 하나가 word2vec이다.
-      - word2vec deeplearning model은 text자체가 onehotenncoding된 단어 벡터를 input과 output에 이용하게 된다.
-         - one-hot-encoding 벡터의 크기는 우리가 '변경하고자 하는 단어의 개수'와 동일해야 한다.
-         - embedding demension의 크기는 2로 정하면 나중에 2차원 평면에 관계도를 표현하기 쉽다.
-   #### 2-3. Keras Layers
-      - `keras.layers.experimental.preprocessing.Normalization`
-      - `keras.layers.Standardization`
-      - `keras.layers.Discretization`
-      - `keras.layers.PreprocessingLayer`
-      - `keras.layers.experimental.preprocessing.TextVectorization`
+      #### 2-1. One-Hot-Encoding 
+         - 일반적으로 범주의 개수가 10개 이하일때 사용
+      #### 2-2. Word2Vec
+         - Embedding의 방법중 하나가 word2vec이다.
+         - word2vec deeplearning model은 text자체가 onehotenncoding된 단어 벡터를 input과 output에 이용하게 된다.
+            - one-hot-encoding 벡터의 크기는 우리가 '변경하고자 하는 단어의 개수'와 동일해야 한다.
+            - embedding demension의 크기는 2로 정하면 나중에 2차원 평면에 관계도를 표현하기 쉽다.
+      #### 2-3. Keras Layers
+         - `keras.layers.experimental.preprocessing.Normalization`
+         - `keras.layers.Standardization`
+         - `keras.layers.Discretization`
+         - `keras.layers.PreprocessingLayer`
+         - `keras.layers.experimental.preprocessing.TextVectorization`
 ### 3. Text Preprocessing
   - [소스 코드]https://github.com/penguin1109/Machine-Learning-via-Tensorflow2.0/blob/master/RNN%20TensorFlow%20Lab/Text_Preprocessing(Twitter_Dataset).ipynb
 
