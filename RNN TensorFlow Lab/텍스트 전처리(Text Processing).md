@@ -14,20 +14,21 @@
    - 여기에는 대표적으로 one-hot-encoding과 embedding이 있는데
         1. one-hot-encoding은 예를 들면 ```['thank', 'you', 'hello']```가 있을때 단어들을 [[1,0,0],[0,1,0],[0,0,1]]이런 식의 벡터로 바꾸어 준다.
         2. 그러나 여기에는 *단어간의 유사도*를 고려해 주지 않는다는 문제가 존재한다.
-        3. Embedding은 이를 해결할 수 있는 것으로, *유사도를 기준으로 단어의 벡터를 형성*하는 것이다.
-      #### 2-1. One-Hot-Encoding 
-         - 일반적으로 범주의 개수가 10개 이하일때 사용
-      #### 2-2. Word2Vec
-         - Embedding의 방법중 하나가 word2vec이다.
-         - word2vec deeplearning model은 text자체가 onehotenncoding된 단어 벡터를 input과 output에 이용하게 된다.
-            - one-hot-encoding 벡터의 크기는 우리가 '변경하고자 하는 단어의 개수'와 동일해야 한다.
-            - embedding demension의 크기는 2로 정하면 나중에 2차원 평면에 관계도를 표현하기 쉽다.
-      #### 2-3. Keras Layers
-         - `keras.layers.experimental.preprocessing.Normalization`
-         - `keras.layers.Standardization`
-         - `keras.layers.Discretization`
-         - `keras.layers.PreprocessingLayer`
-         - `keras.layers.experimental.preprocessing.TextVectorization`
+        3. Embedding은 이를 해결할 수 있는 것으로, *가중치를 기준으로 단어의 벡터를 형성*하는 것이다.
+         
+         1. Embedding Layers
+            - 자연어 처리를 하려고 할 때 갖고 있는 훈련데이터의 단어들을 임베딩 층을 구현하여 임베딩 벡터로 학습하는 경우가 존재한다.
+            - 이떄 keras의 Embedding()이라는 도구는 '사전훈련된 워드 임베딩'이기 떄문에 사용하기 좋다.
+            - 임베딩 층은 일종의 lookup table의 역할을 하는데, 이는 입력정수(입력 시퀀스의 각 단어는 무조건 정수 인코딩이 되어 있어야 한다.)에 대해 밀집 벡터로 mapping하소 이 밀집 벡터는 인공 신경망의 학습 과정에서 가중치가 학습되는 것과 같은 방식으로 훈련이 된다.
+               - 훈련 과정에서 단어는 모델이 해결하고자하는 작업에 맞는 값으로 업데이트가 되며, 이렇게 바뀐 밀집 벡터를 임베딩 벡터라고 한다.
+               - lookup table은 단어 집합의 크기만큼의 행을 가지기 때문에 모든 단어는 고유한 임베딩 층을 갖는다.
+               - 특정 단어가 정수 인코딩이 된 후에 테이블로부터 해당 인덱스에 위치한 임베딩 벡터를 꺼내 올 수 있께되는데, 이 임베딩 벡터는 모델의 입력이 되고, 역전파 과정에서 이 단어의 임베딩 벡터 값이 가중치를 고려하여 학습이 되는 것이다.
+                  - 주의할 것은 무조건 단어들을 원핫인코딩을 거쳐서 입력값으로 반환할 필요가 없다는 것이다.
+                  - 임베딩 벡터의 차원은 우리가 직접 선정할 수 있으며, 임베딩 층이 받는 parameter는 ```(vocab_size, output_dim, input_length)```가 있는데 이는   
+                  ```(텍스트 데이터의 전체 단어 집합의 크기, 워드 임베딩 후 임베딩 벡터의 차원, 입력 시퀀스의 길이 = 입력 문장의 길이)```이다.
+            
+        
+               
 ### 3. Text Preprocessing
   - [소스 코드]https://github.com/penguin1109/Machine-Learning-via-Tensorflow2.0/blob/master/RNN%20TensorFlow%20Lab/Text_Preprocessing(Twitter_Dataset).ipynb
 
