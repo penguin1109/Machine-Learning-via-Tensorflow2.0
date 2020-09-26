@@ -10,7 +10,7 @@ tensorflow2.0을 이용해 공부한 실습 코드 저장소
 ### Kaggle Dataset
    - Kaggle에 올라와있는 dataset을 이용해서 직접 분석하거나 task를 수행한 내용의 코드
    - [소스 코드](https://github.com/penguin1109/Machine-Learning-via-Tensorflow2.0/tree/master/Data%20Analysis%20with%20Kaggle%20DataFrame)
-   - [Hotel_Booking_ProjViewer](https://nbviewer.jupyter.org/github/penguin1109/Machine-Learning-via-Tensorflow2.0/blob/master/Data%20Analysis%20with%20Kaggle%20DataFrame/Data_Anaysis_Proj5%28Kaggle_Hotel_booking%29-%E3%85%A1Predicting%20%285%29.ipynb#)
+
 
 ### 모두의 딥러닝
    - 모두의 딥러닝을 이용해 공부하며 직접 실습한 코드
